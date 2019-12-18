@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <title>Travel tip</title>
+    <link rel="stylesheet" href="./css/myStyle.css">
+    <h1>Travel tip</h1>
+</head>
+<body>
+
+
+    <div id="map" style="width:70%;height:500px;"></div>
+
+    <div class="locations-list-container"></div>
+
+    <div class="currentBtn"><img id="locationPNG" src="./imgs/current-location.png" alt="location icon" height="42" width="42"></div>
+    
+    <!-- google maps -->
+    <script async defer 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIa50T4UQUHbJNOhN9VPzzbY8Qvp4DTxk&callback=init">
+    </script>
+
+
+<!-- libaries -->
+    <script src="lib/jquery.js"></script>
+    <script src="lib/axios.js"></script>
+    <script src="lib/swal.js"></script>
+
+
+
+    <!-- js -->
+    <script src="./js/service.js"></script>
+    <script src="./js/main.js"></script>
+    
+    <script src="./cmps/LocationPreview.js"></script>
+</body>
+</html>
